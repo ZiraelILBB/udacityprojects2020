@@ -112,7 +112,7 @@ def evaluate(results, accuracy, f1):
     # Create legend
     for i, learner in enumerate(results.keys()):
         pl.bar(0, 0, color=colors[i], label=learner)
-    pl.legend()
+    pl.legend(loc = 'upper center')
     
     # Aesthetics
     pl.suptitle("Performance Metrics for Three Supervised Learning Models", fontsize = 16, y = 1.10)
